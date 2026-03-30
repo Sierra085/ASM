@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome to ASM</title>
+  <style>
+    :root {
+      --cag-red: #d82257;
+      --cag-orange: #f37021;
+      --cag-yellow: #ffc60b;
+      --cag-gray: #f7f7f7;
+      --text-dark: #2b2b2b;
+    }
+
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      background-color: var(--cag-gray);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: start;
+      min-height: 100vh;
+      margin: 0;
+      padding: 20px;
+    }
+
+    header {
+      width: 100%;
+      text-align: center;
+      padding: 25px 0;
+      font-size: 26px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      color: white;
+      background: linear-gradient(90deg, var(--cag-red), var(--cag-orange), var(--cag-yellow));
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+    }
+
+    h1 {
+      color: var(--cag-red);
+      margin: 30px 0 20px 0;
+      text-align: center;
+      font-size: 22px;
+    }
+
+    .btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 80%;
+      max-width: 320px;
+      margin: 12px 0;
+      padding: 16px 24px;
+      background-color: var(--cag-orange);
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 10px;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+      transition: 0.25s ease;
+      text-align: center;
+    }
+
+    .btn:hover {
+      background-color: var(--cag-yellow);
+      color: var(--text-dark);
+      transform: scale(1.03);
+    }
+
+    .subsection {
+      width: 80%;
+      max-width: 340px;
+      background: white;
+      border-radius: 10px;
+      padding: 15px;
+      margin-top: 15px;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+      text-align: center;
+    }
+
+    .subsection h2 {
+      margin: 5px 0 15px 0;
+      font-size: 17px;
+      color: var(--cag-red);
+    }
+
+    .sub-btn-container {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .sub-btn {
+      flex: 1;
+      min-width: 130px;
+      padding: 12px 0;
+      background-color: var(--cag-red);
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 600;
+      border-radius: 8px;
+      transition: 0.2s ease;
+      text-align: center;
+    }
+
+    .sub-btn:hover {
+      background-color: var(--cag-yellow);
+      color: var(--text-dark);
+      transform: scale(1.05);
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 13px;
+      color: var(--text-dark);
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <header>Welcome to ASM</header>
+
+  <h1>Choose Your Service</h1>
+
+  <a class="btn" href="https://forms.office.com/r/your-asm-form-id" target="_blank">
+    📝 ASM Service Request Form
+  </a>
+
+  <a class="btn" href="mailto:asm.operations@changiairport.com?subject=Operations%20Support%20Request">
+    🛠️ Operations Support
+  </a>
+
+  <a class="btn" href="mailto:asm.scheduling@changiairport.com?subject=Scheduling%20Request">
+    📆 Scheduling & Planning
+  </a>
+
+  <a class="btn" href="mailto:asm.facilities@changiairport.com?subject=Facilities%20Request">
+    🏢 Facilities Management
+  </a>
+
+  <div class="subsection">
+    <h2>🔧 ASM Technical Support</h2>
+    <div class="sub-btn-container">
+      <a class="sub-btn" href="mailto:asm.support@changiairport.com?subject=Technical%20Support%20Request">✉️ Email Support</a>
+      <a class="sub-btn" href="https://forms.gle/your-asm-support-form" target="_blank">📋 Submit Ticket</a>
+    </div>
+  </div>
+
+  <div class="subsection">
+    <h2>📊 ASM Resources</h2>
+    <div class="sub-btn-container">
+      <a class="sub-btn" href="mailto:asm.reports@changiairport.com?subject=Report%20Request">📈 Reports</a>
+      <a class="sub-btn" href="mailto:asm.admin@changiairport.com?subject=Admin%20Query">⚙️ Admin</a>
+    </div>
+  </div>
+
+  <footer>©Sakthis Tech</footer>
+</body>
+</html>
